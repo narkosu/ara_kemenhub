@@ -49,10 +49,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=narkosu_aramenhub',
+			'connectionString' => 'mysql:host=localhost;dbname=araasses',
 			'emulatePrepare' => true,
-			'username' => 'narkosu_menhub',
-			'password' => 'menhub234',
+			'username' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
 			'tablePrefix' => 'tbl_',
 		),
