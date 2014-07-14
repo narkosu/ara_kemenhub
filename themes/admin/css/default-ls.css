@@ -1,0 +1,116 @@
+@charset "UTF-8"; html,body {-webkit-tap-highlight-color:rgba(0,0,0,0.0)}
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {margin:0; padding:0; border:0; outline:0; font-size:100%; vertical-align:baseline; background:transparent}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {display:block}
+nav ul, ul {list-style:none}
+blockquote, q {quotes:none}
+blockquote:before, blockquote:after, q:before, q:after {content:''; content:none}
+a {margin:0; padding:0; font-size:100%; vertical-align:baseline; background:transparent}
+.a_block {display: block}
+ins {background-color:#ff9; color:#000; text-decoration:none}
+mark {background-color:#ff9; color:#000; font-style:italic; font-weight:bold}
+del {text-decoration: line-through}
+abbr[title], dfn[title] {border-bottom:1px dotted #000; cursor:help}
+table {border-collapse:collapse; border-spacing:0}
+hr {display:block; height:1px; border:0; border-top:1px solid #ccc; margin:1em 0; padding:0}
+input, select {vertical-align:middle}
+html,body {font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; 
+/*background: #272727*/
+}
+a {font-family: Helvetica; text-decoration: none; color: #d1d1d1; font-size: 14px}
+a:hover {text-decoration: underline}
+.hidden {display: none}
+select {border-style: solid; border-width: 1px}
+.button {border:0}
+input,textarea,form {border:0}
+form .error, form label.error {color: #FF3300}
+label.error {color: #FF3300; display: block; font-size: 11px; left: 0; position: absolute; text-transform: uppercase; top: 108px; width: 340px; margin:0 30px}
+.text-input {height: 24px; border-width: 1px; border-style: solid; border-color: #a8a8a8; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 18px; margin: 0px auto; padding: 8px}
+.step-error {position: absolute; left: 0px; top: 45px; display: none; color: #FF3300; font-size: 9px; width: 100%; text-align: center}
+#processing-container {width: 100%; height: 100%; position: absolute}
+#processing-container #processing {padding-top: 160px; color: #ebebeb; font-size: 28px; text-align: center}
+#background-container {width: 100%; height: 100%; position: fixed}
+#background-container > div {position:relative}
+#background {width: 100%; height: auto; z-index: -100}
+#background-container #bottom-fader, #bottom-fader {width: 100%; height: 233px; background-image: url("/cupcake/images/common/background-fade-233.png"); position: fixed; bottom: 0px; background-repeat: repeat-x}
+#page-content .footer {width: 100%; text-align: center}
+#page-content .footer .logo {padding: 15px}
+#page-content .footer .links {color: white; width: 100%; text-align: center; font-size: 13px; font-weight: bold}
+.button-container {width: 340px; height: auto; position: absolute; bottom: 15px; left: 30px; text-align: right}
+#step2 .button-container {padding-top: 20px}
+.button {-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.2); -webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.2); border-radius: 4px 4px 4px 4px; box-shadow: 1px 1px 0px #B2B2B2; text-shadow: 0 -1px rgba(0,0,0,0.2); background-color: #5e95a7; background: -webkit-gradient(linear, left top, left bottom, from(#23D3FD), to(#5e95a7)); background: -moz-linear-gradient(center top , #23D3FD, #5e95a7); font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; text-transform: lowercase; -moz-border-radius: 4px; -webkit-border-radius: 4px; vertical-align: top; padding: 0.3em 1em 0.35em; font-size: 26px; color: #FFF; cursor: pointer; width: auto }
+.button:hover {background: -webkit-gradient(linear, left top, left bottom, from(#23D3FD), to(#099ABD)); background: -moz-linear-gradient(center top , #23D3FD, #099ABD); cursor: pointer; color: #FFF }
+#landing-page-container {background:none; width:828px; margin:0 auto; float:none; height:auto; padding-top:130px; position:relative}
+#logoArea {position:absolute; top:65px; left:21px}
+#background-container {width:375px;  position:relative; float:left; overflow:hidden}
+#background-mask {position:absolute; z-index:101; top:0px; left:0px}
+#background {position:absolute; z-index:100; top:0; left:0; height:350px; width:400px}
+#steps-container {width:400px; height:350px; float:left; position:relative; margin:0 0 0 28px; background:#fff; overflow:hidden}
+#whiteBox-mask {position:absolute; top:0; left:0; height:100%; width:100%}
+#processing-container {width:100%; height:100%; display:none}
+.insideBox {height:350px; width:100%; position:relative; float:left}
+.whiteBox {position:relative}
+#steps {position:relative}
+#steps > li {position:absolute; top:0; left:0; display:none; width:400px; height:350px; -webkit-border-radius: 15px; -moz-border-radius: 15px; border-radius: 15px; background:none; z-index:201}
+#steps > li#city-and-email-step {display:block}
+.headlineArea {padding: 20px 30px; width: 340px; height: 110px; position:relative}
+.bigHead {font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; font-size: 48px; color: #666666}
+.bigText {font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #999; line-height: 22px; margin-top: 10px}
+.doubleHead {font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; font-size: 38px; color: #666666; line-height: 36px}
+.doubleText {font-family: Helvetica, Arial, sans-serif; font-size: 18px; color: #999; line-height: 20px; margin-top: 33px}
+.singleHead {font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; font-size: 30px; color: #999999; line-height: 34px}
+.singleHead .hot {color: #5bc2ee}
+.actionArea {padding: 0px 30px; width: 340px; height: 160px}
+.hr {border-top: 1px #ccc solid; padding: 0px; margin: 0px; height: 10px}
+.actionText {font-family: Helvetica, Arial, sans-serif; color: #999; font-size: 14px; margin-bottom: 20px; margin-top: 8px}
+.locale_fr .doubleHead {font-size: 34px; line-height: 34px}
+.locale_fr .doubleText {margin-top:20px}
+.locale_fr .actionText {margin-top: 15px}
+.locale_ar {direction: rtl}
+.screen2 .actionArea {padding: 0px 15px; width: 370px; height: 80px}
+.screen2 .button-container {position: absolute; bottom: 15px; left: 30px}
+.screen2 .headlineArea {height: 230px; padding: 20px 30px; width: 340px}
+.screen2 .headlineArea .families {position: absolute; bottom: 10px; width: 340px}
+#city-and-email-step {z-index:204}
+#city-and-email-step .actionArea {position:absolute; top:0; left:0; visibility:hidden; height:170px; padding-top:20px}
+#city-and-email-step .hr {margin:0 30px}
+.city-picker-container {width: 100%; text-align: center}
+#city_picker {width:100% !important; margin: 0px auto; display: block}
+.chzn-single {z-index:100}
+#email-input {width: 320px; display: block; font-size: 18px; font-family:Helvetica, Arial, sans-serif}
+#coiStep {z-index:203}
+#coiStep .singleHead {padding-top: 210px; padding-top:0}
+#familiesStep {z-index:202}
+#familiesStep .button {width: 200px}
+#familiesStep .continue-button {float: right; width: 165px; margin-right: 0}
+#familiesStep .cancel-button {float: left; margin-left: 0; width: 165px; background: none; background-color: #bbb }
+#zipCodeStep {z-index:201}
+.zipcode {position:relative}
+.zipcode img {position: absolute; top: 5px; left: 5px}
+.zipcode .ziptext-input {width: 334px; height: 40px; border-width: 1px; border-style: solid; border-color: #a8a8a8; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; font-size: 18px; margin: 15px 0; padding: 2px; font-size: 22px; color: #555}
+.zipcodeText {font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; font-size: 32px; color: #999; line-height: 38px}
+#zip-code-input {text-align: center; height: 40px; line-height:40px; width: 200px; font-size: 22px; margin-left: 65px; float:left}
+.button-container .zipcodeButton .continue-button {float: right; width: 180px}
+#zipcodeStep label.error {top:250px}
+#footerBox {padding-top:15px; width: 100%; height: auto; clear:both}
+.footerText {font-family: Helvetica, Arial, sans-serif; color: #999; font-size: 10px; line-height: 14px; text-align: right; margin-right:15px}
+.footerText a {color: #999; font-size: 10px; text-decoration: none}
+.footerText a:hover {color: #ccc; font-size: 10px; text-decoration: underline; color: #999}
+.footerText a.skip_link, .footerText a.skip_link:hover {font-size:12px}
+.familiesText {font-family: 'Arial Rounded MT Bold', Helvetica, Arial, sans-serif; font-size: 30px; color: #999; line-height: 36px}
+.families-logo {margin: 0 0 10px -10px}
+#terms_privacy {color: inherit; font-family: inherit; font-size: inherit; margin: 0; text-align: right; width: 100%}
+#terms_privacy a {color:inherit; font-family:inherit; font-size:inherit; text-decoration:underline}
+#ls-mask {}
+.ls-mask {height:100%; width:100%; background:url(/cupcake/images/common/semi-transparent-50.png) repeat; position:fixed; z-index:997; top:0; left:0; display:none}
+.ls-loadingScreen {width:100%; height:100%; position:fixed; z-index:998; top:0; left:0; color:#fff; font-size:26px; display:none; background:url(/cupcake/images/common/semi-transparent-50.png) repeat}
+.ls-loadingScreen .ls-loadText {display:block; font-size:26px; line-height:26px; min-height:26px; text-align:center}
+#ls-loadingScreen {-webkit-border-radius: 13px; -moz-border-radius: 13px; border-radius: 13px}
+.sign-in-footer-link {font-family: Helvetica, Arial, sans-serif; color: #999; font-size: 12px; line-height: 14px; text-align: right; cursor: pointer; margin-bottom: 10px}
+.boxlogin{
+	 background: none repeat scroll 0 0 #EDEDED;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 2px rgba(0, 0, 0, 0.2), 2px -2px 0 #FFFFFF inset, -2px 2px 0 #FFFFFF inset;
+    overflow: hidden;
+    padding: 15px 10px;
+    text-shadow: 0 1px 0 #FFFFFF;
+}
